@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+
+.team-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:25px;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.15);
+}
+
+.team-header img{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+}
+
+.team-title{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.team-details{
+    font-size:18px;
+    color:#444;
+    margin-top:5px;
+}
+
+.quad-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.quad-column{
+    background:white;
+    border-radius:10px;
+    padding:12px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.15);
+    min-height:500px;
+}
+
+.quad-title{
+    font-size:22px;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:12px;
+    padding-bottom:8px;
+    border-bottom:2px solid #ddd;
+}
+
+.game{
+    margin-bottom:8px;
+    padding:6px;
+    border-radius:5px;
+    font-size:15px;
+}
+
+.win{
+    background-color:#d7ffd9;
+}
+
+.loss{
+    background-color:#ffd7d7;
+}
+
+.future{
+    background-color:#eeeeee;
+}
+
+.section-title{
+    font-size:28px;
+    font-weight:bold;
+    margin:35px 0 15px 0;
+}
+
+.game-logo{
+    width:18px;
+    height:18px;
+    object-fit:contain;
+    vertical-align:middle;
+    margin-right:5px;
+}
