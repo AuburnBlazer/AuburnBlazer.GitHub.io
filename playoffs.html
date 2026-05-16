@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="format.css"><title>Auburn Blazer's Computer playoff</title></head><body style="background-color:black"><h1>Auburn Blazer's Computer playoff:</h1><table id="rankings"><tr style="color:white"><th style="width:4%" onclick="sortTable(0)">Rank</th><th style="width:10%"onclick="sortTable(1)">Team Name</th><th style="width:6%" onclick="sortTable(2)"></th><th style="width:8%" onclick="sortTable(3)">Conference</th><th style="width:5%" onclick="sortTable(4)">W</th><th style="width:5%" onclick="sortTable(5)">L</th><th style="width:7%" onclick="sortTable(6)">Rating</th><th style "width:14%" onclick="sortTable(7)">Avg Opp Value</th><th style="width:7%" onclick="sortTable(8)">RPI rank</th><th style="width:7%" onclick="sortTable(9)">RPI</th><th style="width:10%" onclick="sortTable(12)">Best win</th><th style="width:13%" onclick="sortTable(13)">Worst loss</th></th><tr style="color:white"><td>1</td><td><a href="TeamSheets/Indiana.html" style="color:white">Indiana</a></td><td><img src="/Team Images/Indiana.jpeg" width ="60" height ="60" align="left"></td><td>Big Ten</td><td>16</td><td>0</td><td>0.865801</td><td>0.615420</td><td>1</td><td>0.6732107862859023</td><td>null</td><td>null</td></tr><tr style="color:white"><td>2</td><td><a href="TeamSheets/Ohio_State.html" style="color:white">Ohio State</a></td><td><img src="/Team Images/Ohio State.jpeg" width ="60" height ="60" align="left"></td><td>Big Ten</td><td>12</td><td>2</td><td>0.801298</td><td>0.599583</td><td>5</td><td>0.6303422094981987</td><td>null</td><td>null</td></tr><tr style="color:white"><td>3</td><td><a href="TeamSheets/Oregon.html" style="color:white">Oregon</a></td><td><img src="/Team Images/Oregon.jpeg" width ="60" height ="60" align="left"></td><td>Big Ten</td><td>13</td><td>2</td><td>0.798271</td><td>0.618978</td><td>2</td><td>0.638684816410451</td><td>null</td><td>null</td></tr><tr style="color:white"><td>4</td><td><a href="TeamSheets/Georgia.html" style="color:white">Georgia</a></td><td><img src="/Team Images/Georgia.jpeg" width ="60" height ="60" align="left"></td><td>SEC</td><td>12</td><td>2</td><td>0.788900</td><td>0.579249</td><td>7</td><td>0.6143490252193904</td><td>null</td><td>null</td></tr><tr style="color:white"><td>5</td><td><a href="TeamSheets/Texas_Tech.html" style="color:white">Texas Tech</a></td><td><img src="/Team Images/Texas Tech.jpeg" width ="60" height ="60" align="left"></td><td>Big XII</td><td>12</td><td>2</td><td>0.780343</td><td>0.535975</td><td>9</td><td>0.6047606204076571</td><td>null</td><td>null</td></tr><tr style="color:white"><td>6</td><td><a href="TeamSheets/Ole_Miss.html" style="color:white">Ole Miss</a></td><td><img src="/Team Images/Ole Miss.jpeg" width ="60" height ="60" align="left"></td><td>SEC</td><td>13</td><td>2</td><td>0.781405</td><td>0.567397</td><td>6</td><td>0.6167056087656563</td><td>null</td><td>null</td></tr><tr style="color:white"><td>7</td><td><a href="TeamSheets/BYU.html" style="color:white">BYU</a></td><td><img src="/Team Images/BYU.jpeg" width ="60" height ="60" align="left"></td><td>Big XII</td><td>12</td><td>2</td><td>0.784675</td><td>0.619917</td><td>4</td><td>0.6311713268061963</td><td>null</td><td>null</td></tr><tr style="color:white"><td>8</td><td><a href="TeamSheets/Texas_A&M.html" style="color:white">Texas A&M</a></td><td><img src="/Team Images/Texas A&M.jpeg" width ="60" height ="60" align="left"></td><td>SEC</td><td>11</td><td>2</td><td>0.760829</td><td>0.527232</td><td>15</td><td>0.5915948041293073</td><td>null</td><td>null</td></tr><tr style="color:white"><td>9</td><td><a href="TeamSheets/Utah.html" style="color:white">Utah</a></td><td><img src="/Team Images/Utah.jpeg" width ="60" height ="60" align="left"></td><td>Big XII</td><td>11</td><td>2</td><td>0.748853</td><td>0.494104</td><td>21</td><td>0.5800364933298385</td><td>null</td><td>null</td></tr><tr style="color:white"><td>10</td><td><a href="TeamSheets/North_Texas.html" style="color:white">North Texas</a></td><td><img src="/Team Images/North Texas.jpeg" width ="60" height ="60" align="left"></td><td>AAC</td><td>12</td><td>2</td><td>0.722860</td><td>0.457247</td><td>13</td><td>0.5931569580492615</td><td>null</td><td>null</td></tr><tr style="color:white"><td>11</td><td><a href="TeamSheets/Oklahoma.html" style="color:white">Oklahoma</a></td><td><img src="/Team Images/Oklahoma.jpeg" width ="60" height ="60" align="left"></td><td>SEC</td><td>10</td><td>3</td><td>0.736295</td><td>0.604716</td><td>10</td><td>0.6038688413996782</td><td>null</td><td>null</td></tr><tr style="color:white"><td>12</td><td><a href="TeamSheets/Miami.html" style="color:white">Miami</a></td><td><img src="/Team Images/Miami.jpeg" width ="60" height ="60" align="left"></td><td>ACC</td><td>13</td><td>3</td><td>0.729129</td><td>0.611770</td><td>3</td><td>0.6328925637203621</td><td>null</td><td>null</td></tr></table><script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("rankings");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (Number(x.innerHTML.toLowerCase()) > Number(y.innerHTML.toLowerCase())) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (Number(x.innerHTML.toLowerCase()) < Number(y.innerHTML.toLowerCase())) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+</body></html>
