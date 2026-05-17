@@ -31,3 +31,34 @@ h1, h2, h3 {
     border-color: #777;
     transform: translateY(-2px);
 }
+
+.topbar{
+    display:flex;
+    gap:15px;
+    padding:15px 20px;
+    margin-bottom:25px;
+    background:#1a1a1a;
+    border-bottom:1px solid #333;
+}
+
+.topbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    background:#1f1f1f;
+    border:1px solid #444;
+    padding:10px 18px;
+    border-radius:10px;
+    transition:0.2s ease;
+}
+
+/* Prevent purple visited links */
+.topbar a:visited{
+    color:white;
+}
+
+.topbar a:hover{
+    background:#2a2a2a;
+    border-color:#777;
+    transform:translateY(-2px);
+}
