@@ -37,3 +37,18 @@ tr:hover td {
 tr:nth-child(even) td {
     background-color: #1a1a1a;
 }
+
+/* Team links */
+.team-link{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.team-link:visited{
+    color:white;
+}
+
+.team-link:hover{
+    color:#cccccc;
+}
