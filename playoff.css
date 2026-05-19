@@ -1,0 +1,13 @@
+.playoff-container{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    align-items:flex-start;
+    margin-top:40px;
+}
+
+.playoff-column{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
