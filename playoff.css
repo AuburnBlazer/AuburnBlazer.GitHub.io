@@ -92,3 +92,21 @@
             #555
         );
 }
+
+.team-name{
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+}
+
+.team-record{
+    color:#d0d0d0;
+    margin-left:8px;
+    font-weight:normal;
+}
+
+.team-conference{
+    color:#9a9a9a;
+    margin-left:6px;
+    font-weight:normal;
+}
