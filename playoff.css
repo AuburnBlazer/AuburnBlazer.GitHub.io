@@ -93,6 +93,12 @@
         );
 }
 
+.team-rank{
+    font-size:9px;
+    font-weight:bold;
+    color:white;
+}
+
 .team-name{
     font-size:18px;
     font-weight:bold;
@@ -106,6 +112,7 @@
 }
 
 .team-conference{
+    font-size:12px;
     color:#9a9a9a;
     margin-left:6px;
     font-weight:normal;
