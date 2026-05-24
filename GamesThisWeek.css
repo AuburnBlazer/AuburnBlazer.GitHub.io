@@ -145,6 +145,8 @@
     flex-wrap:wrap;
 
     row-gap:2px;
+
+    width:100%;
 }
 
 /* =========================
@@ -291,7 +293,7 @@
         height:28px;
     }
 
-    .projected-score{
+    .win-probability{
         font-size:14px;
     }
 }
