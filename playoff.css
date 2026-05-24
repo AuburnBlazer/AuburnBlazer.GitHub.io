@@ -254,6 +254,19 @@
 
     object-fit:contain;
 }
+.away-win-per-logo{
+    width:18px;
+    height:18px;
+
+    object-fit:contain;
+}
+
+.home-win-per-logo{
+    width:18px;
+    height:18px;
+
+    object-fit:contain;
+}
 
 /* =========================
    SPREAD VALUE
