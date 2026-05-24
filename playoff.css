@@ -225,3 +225,46 @@
 
     color:#f4f4f4;
 }
+
+/* =========================
+   PREDICTION ROW
+   ========================= */
+
+.prediction-row{
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:14px;
+    padding-top:12px;
+
+    border-top:1px solid #3a3a3a;
+}
+
+/* =========================
+   SPREAD LOGO
+   ========================= */
+
+.spread-logo{
+    width:18px;
+    height:18px;
+
+    object-fit:contain;
+}
+
+/* =========================
+   SPREAD VALUE
+   ========================= */
+
+.spread-value{
+    font-size:14px;
+
+    font-weight:700;
+
+    color:#f5f5f5;
+
+    letter-spacing:0.3px;
+}
