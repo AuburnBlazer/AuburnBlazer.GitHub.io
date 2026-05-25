@@ -262,13 +262,16 @@
 .spread-logo{
     width:22px;
     height:22px;
-
+    
+    flex-shrink:0;
     object-fit:contain;
 }
 
 .away-win-per-logo{
     width:22px;
     height:22px;
+        
+    flex-shrink:0;
 
     object-fit:contain;
 }
@@ -276,6 +279,8 @@
 .home-win-per-logo{
     width:22px;
     height:22px;
+        
+    flex-shrink:0;
 
     object-fit:contain;
 }
