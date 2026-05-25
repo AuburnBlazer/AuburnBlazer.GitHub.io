@@ -232,9 +232,7 @@
 .win-probability{
     margin-left:auto;
 
-    font-size:15px;
-
-    font-weight:bold;
+    font-size:12px;
 
     color:#f4f4f4;
 }
@@ -262,22 +260,27 @@
    ========================= */
 
 .spread-logo{
-    width:24px;
-    height:24px;
-
+    width:22px;
+    height:22px;
+    
+    flex-shrink:0;
     object-fit:contain;
 }
 
 .away-win-per-logo{
-    width:24px;
-    height:24px;
+    width:22px;
+    height:22px;
+        
+    flex-shrink:0;
 
     object-fit:contain;
 }
 
 .home-win-per-logo{
-    width:24px;
-    height:24px;
+    width:22px;
+    height:22px;
+        
+    flex-shrink:0;
 
     object-fit:contain;
 }
@@ -287,7 +290,7 @@
    ========================= */
 
 .spread-value{
-    font-size:14px;
+    font-size:12px;
 
     font-weight:700;
 
@@ -332,6 +335,6 @@
     }
 
     .win-probability{
-        font-size:14px;
+        font-size:12px;
     }
 }
