@@ -34,11 +34,27 @@ h1, h2, h3 {
 
 .topbar{
     display:flex;
-    gap:15px;
+    flex-wrap:wrap;
+    gap:20px;
     padding:15px 20px;
     margin-bottom:25px;
     background:#1a1a1a;
     border-bottom:1px solid #333;
+}
+
+.toolbar-section{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.toolbar-label{
+    color:#cccccc;
+    font-weight:bold;
+    margin-right:5px;
+    font-size:14px;
+    text-transform:uppercase;
 }
 
 .topbar a{
@@ -52,7 +68,6 @@ h1, h2, h3 {
     transition:0.2s ease;
 }
 
-/* Prevent purple visited links */
 .topbar a:visited{
     color:white;
 }
