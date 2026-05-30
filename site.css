@@ -34,21 +34,22 @@ h1, h2, h3 {
 
 .topbar{
     display:flex;
-    flex-wrap:wrap;
+    justify-content:space-evenly;
     align-items:flex-start;
-
-    background:#1a1a1a;
-    border-bottom:2px solid #333;
+    flex-wrap:wrap;
+    gap:20px;
 
     padding:15px 20px;
     margin-bottom:25px;
-    gap:20px;
+
+    background:#1a1a1a;
+    border-bottom:2px solid #333;
 }
 
 .toolbar-section{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+    flex:1;
+    min-width:300px;
+    text-align:center;
 }
 
 .toolbar-title{
@@ -58,35 +59,21 @@ h1, h2, h3 {
 
     border-bottom:1px solid #444;
     padding-bottom:5px;
-    margin-bottom:5px;
+    margin-bottom:10px;
 
     text-transform:uppercase;
     letter-spacing:1px;
+}
+
+.toolbar-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
 }
 
 .toolbar-divider{
     width:1px;
     background:#444;
     align-self:stretch;
-}
-
-.toolbar-section a{
-    color:white;
-    text-decoration:none;
-
-    background:#222;
-    border:1px solid #444;
-
-    padding:8px 14px;
-    border-radius:8px;
-
-    font-weight:600;
-
-    transition:.2s;
-}
-
-.toolbar-section a:hover{
-    background:#2d2d2d;
-    border-color:#777;
-    transform:translateY(-2px);
 }
