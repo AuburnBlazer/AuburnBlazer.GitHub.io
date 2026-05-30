@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Comparison</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 20px;
+        }
+
+        h1{
+            text-align:center;
+        }
+
+        .selectors{
+            text-align:center;
+            margin-bottom:25px;
+        }
+
+        select{
+            padding:8px;
+            margin:0 10px;
+            font-size:16px;
+        }
+
+        .comparison-container{
+            display:flex;
+            justify-content:space-between;
+            gap:20px;
+        }
+
+        .team-column{
+            width:45%;
+        }
+
+        .team-header{
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        .team-logo{
+            width:120px;
+            height:120px;
+            object-fit:contain;
+        }
+
+        .section{
+            margin-bottom:20px;
+            border:1px solid #444;
+            border-radius:8px;
+            overflow:hidden;
+        }
+
+        .section-title{
+            background:#333;
+            padding:10px;
+            font-weight:bold;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
+
+        td{
+            padding:8px;
+            border-top:1px solid #444;
+        }
+
+        td:first-child{
+            font-weight:bold;
+            width:50%;
+        }
+
+        .center-divider{
+            width:10%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:24px;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Team Comparison</h1>
+
+<div class="selectors">
+
+    <select id="team1Select"></select>
+
+    <span>vs</span>
+
+    <select id="team2Select"></select>
+
+</div>
+
+<div class="comparison-container">
+
+    <!-- TEAM 1 -->
+    <div class="team-column">
+
+        <div class="team-header">
+
+            <img id="team1Logo"
+                 class="team-logo"
+                 src=""
+                 alt="Logo">
+
+            <h2 id="team1Name"></h2>
+
+        </div>
+
+        <!-- TEAM INFO -->
+        <div class="section">
+
+            <div class="section-title">
+                Team Information
+            </div>
+
+            <table>
+                <tr>
+                    <td>Record</td>
+                    <td id="team1Record"></td>
+                </tr>
+
+                <tr>
+                    <td>Conference</td>
+                    <td id="team1Conference"></td>
+                </tr>
+            </table>
+
+        </div>
+
+        <!-- RANKING METRICS -->
+        <div class="section">
+
+            <div class="section-title">
+                Ranking Metrics
+            </div>
+
+            <table>
+
+                <tr>
+                    <td>Rank</td>
+                    <td id="team1Rank"></td>
+                </tr>
+
+                <tr>
+                    <td>Rating</td>
+                    <td id="team1Rating"></td>
+                </tr>
+
+                <tr>
+                    <td>SOS</td>
+                    <td id="team1SOS"></td>
+                </tr>
+
+                <tr>
+                    <td>SOS Rank</td>
+                    <td id="team1SOSRank"></td>
+                </tr>
+
+                <tr>
+                    <td>RPI</td>
+                    <td id="team1RPI"></td>
+                </tr>
+
+                <tr>
+                    <td>RPI Rank</td>
+                    <td id="team1RPIRank"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- QUADRANTS -->
+        <div class="section">
+
+            <div class="section-title">
+                Quadrant Records
+            </div>
+
+            <table>
+
+                <tr>
+                    <td>Q1</td>
+                    <td id="team1Q1"></td>
+                </tr>
+
+                <tr>
+                    <td>Q2</td>
+                    <td id="team1Q2"></td>
+                </tr>
+
+                <tr>
+                    <td>Q3</td>
+                    <td id="team1Q3"></td>
+                </tr>
+
+                <tr>
+                    <td>Q4</td>
+                    <td id="team1Q4"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- RESUME -->
+        <div class="section">
+
+            <div class="section-title">
+                Resume Highlights
+            </div>
+
+            <table>
+
+                <tr>
+                    <td>Best Win</td>
+                    <td id="team1BestWin"></td>
+                </tr>
+
+                <tr>
+                    <td>Worst Loss</td>
+                    <td id="team1WorstLoss"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="center-divider">
+        VS
+    </div>
+
+    <!-- TEAM 2 -->
+    <div class="team-column">
+
+        <div class="team-header">
+
+            <img id="team2Logo"
+                 class="team-logo"
+                 src=""
+                 alt="Logo">
+
+            <h2 id="team2Name"></h2>
+
+        </div>
+
+        <!-- TEAM INFO -->
+
+        <div class="section">
+
+            <div class="section-title">
+                Team Information
+            </div>
+
+            <table>
+
+                <tr>
+                    <td>Record</td>
+                    <td id="team2Record"></td>
+                </tr>
+
+                <tr>
+                    <td>Conference</td>
+                    <td id="team2Conference"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- RANKING METRICS -->
+
+        <div class="section">
+
+            <div class="section-title">
+                Ranking Metrics
+            </div>
+
+            <table>
+
+                <tr>
+                    <td>Rank</td>
+                    <td id="team2Rank"></td>
+                </tr>
+
+                <tr>
+                    <td>Rating</td>
+                    <td id="team2Rating"></td>
+                </tr>
+
+                <tr>
+                    <td>SOS</td>
+                    <td id="team2SOS"></td>
+                </tr>
+
+                <tr>
+                    <td>SOS Rank</td>
+                    <td id="team2SOSRank"></td>
+                </tr>
+
+                <tr>
+                    <td>RPI</td>
+                    <td id="team2RPI"></td>
+                </tr>
+
+                <tr>
+                    <td>RPI Rank</td>
+                    <td id="team2RPIRank"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- QUADRANTS -->
+
+        <div class="section">
+
+            <div class="section-title">
+                Quadrant Records
+            </div>
+
+            <table>
+
+                <tr>
+                    <td>Q1</td>
+                    <td id="team2Q1"></td>
+                </tr>
+
+                <tr>
+                    <td>Q2</td>
+                    <td id="team2Q2"></td>
+                </tr>
+
+                <tr>
+                    <td>Q3</td>
+                    <td id="team2Q3"></td>
+                </tr>
+
+                <tr>
+                    <td>Q4</td>
+                    <td id="team2Q4"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- RESUME -->
+
+        <div class="section">
+
+            <div class="section-title">
+                Resume Highlights
+            </div>
+
+            <table>
+
+                <tr>
+                    <td>Best Win</td>
+                    <td id="team2BestWin"></td>
+                </tr>
+
+                <tr>
+                    <td>Worst Loss</td>
+                    <td id="team2WorstLoss"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="compare.js"></script>
+
+</body>
+</html>
