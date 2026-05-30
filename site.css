@@ -34,15 +34,9 @@ h1, h2, h3 {
 
 .topbar{
     display:flex;
-    flex-wrap:wrap;
+    justify-content:space-evenly;
     align-items:flex-start;
-
-    background:#1a1a1a;
-    border-bottom:2px solid #333;
-
-    padding:15px 20px;
-    margin-bottom:25px;
-    gap:20px;
+    flex-wrap:wrap;
 }
 
 .toolbar-section{
