@@ -338,3 +338,9 @@
         font-size:12px;
     }
 }
+
+.matchup-link{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
