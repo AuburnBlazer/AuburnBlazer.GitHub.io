@@ -1,0 +1,131 @@
+```css
+.projection-container{
+
+    width:100%;
+    max-width:1800px;
+
+    margin:auto;
+
+    padding:30px;
+}
+
+.page-title{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    font-size:42px;
+
+    font-weight:700;
+}
+
+.projection-section{
+
+    margin-bottom:60px;
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    border-bottom:2px solid #444;
+
+    padding-bottom:12px;
+}
+
+.sub-section-title{
+
+    text-align:center;
+
+    margin-top:25px;
+    margin-bottom:20px;
+
+    font-size:24px;
+}
+
+.games-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin-bottom:30px;
+}
+
+/* =========================
+   REGION LAYOUT
+   ========================= */
+
+.region-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    align-items:start;
+}
+
+.region-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    align-items:center;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media(max-width:1000px){
+
+    .region-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .region-column{
+
+        width:100%;
+    }
+}
+
+@media(max-width:768px){
+
+    .projection-container{
+
+        padding:15px;
+    }
+
+    .page-title{
+
+        font-size:30px;
+    }
+
+    .section-title{
+
+        font-size:24px;
+    }
+
+    .sub-section-title{
+
+        font-size:18px;
+    }
+}
+```
