@@ -2,8 +2,9 @@
 
     width:100%;
     max-width:380px;
+    min-width:380px;
 
-    min-height:170px;
+    min-height:190px;
 
     box-sizing:border-box;
 
