@@ -1,4 +1,3 @@
-```css
 .projection-container{
 
     width:100%;
@@ -52,16 +51,21 @@
 
 .games-grid{
 
-    display:flex;
+    display:grid;
 
-    flex-wrap:wrap;
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(380px, 1fr)
+        );
 
-    justify-content:center;
+    gap:25px;
 
-    gap:20px;
+    width:100%;
 
-    margin-bottom:30px;
+    margin-bottom:40px;
 }
+
 
 /* =========================
    REGION LAYOUT
@@ -128,4 +132,3 @@
         font-size:18px;
     }
 }
-```

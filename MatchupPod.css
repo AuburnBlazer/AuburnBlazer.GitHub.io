@@ -1,8 +1,11 @@
 .matchup-pod{
-    position:relative;
 
     width:100%;
-    max-width:340px;
+    max-width:380px;
+
+    min-height:170px;
+
+    box-sizing:border-box;
 
     background:linear-gradient(
         145deg,
