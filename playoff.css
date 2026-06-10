@@ -12,3 +12,44 @@
     flex-direction:column;
     gap:25px;
 }
+
+.projection-summary{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin:30px auto;
+    flex-wrap:wrap;
+}
+
+.summary-block{
+    background:#1f1f1f;
+    border:2px solid #333;
+    border-radius:12px;
+    padding:20px;
+    min-width:250px;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+
+.summary-block h2{
+    margin-top:0;
+    margin-bottom:15px;
+    text-align:center;
+    color:white;
+    border-bottom:1px solid #444;
+    padding-bottom:8px;
+}
+
+.summary-block ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.summary-block li{
+    padding:6px 0;
+    border-bottom:1px solid #333;
+}
+
+.summary-block li:last-child{
+    border-bottom:none;
+}
