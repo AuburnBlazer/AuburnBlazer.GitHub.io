@@ -55,3 +55,29 @@
 .summary-block li:last-child{
     border-bottom:none;
 }
+
+.summary-block-img{
+    width:32px;
+    height:32px;
+    object-fit:contain;
+    flex-shrink:0;
+}
+
+conf-block{
+    display:block;
+    padding:8px 0;
+    text-align:center;
+    font-weight:bold;
+    border-bottom:1px solid #333;
+}
+
+conf-block:last-child{
+    border-bottom:none;
+}
+
+.summary-block:last-child{
+    flex-basis:100%;
+    max-width:500px;
+    margin:0 auto;
+}
+
