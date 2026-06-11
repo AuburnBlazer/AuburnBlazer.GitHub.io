@@ -75,7 +75,7 @@ conf-block:last-child{
     border-bottom:none;
 }
 
-.summary-block:last-child{
+.conference-summary{
     flex-basis:100%;
     max-width:500px;
     margin:0 auto;
